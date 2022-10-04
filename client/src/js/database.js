@@ -20,15 +20,12 @@ export const putDb = async (content) => {
   const request = store.put({jate: content});
   const result = await request;
   console.log('data saved to database', result)
-  console.error('putDb not implemented');
   return result;
-  
 }
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   console.log('GET from the databse');
-  console.error('getDb not implemented');
   const textDb = await openDB('jate',1);
   const tx = textDb.transaction('jate','readonly');
   const store = tx.objectStore('jate');
