@@ -7,6 +7,8 @@ The task that we were set was to build a text editor that runs in the browser. T
 ## Install Instructions
 
      npm install
+     npm run build
+     npm run start
 
 ## Screenshot of Application
 
